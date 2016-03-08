@@ -59,7 +59,7 @@ defmodule Untappd do
 
   @spec build_qs([{atom, binary}]) :: binary
   defp build_qs([]), do: ""
-  defp build_qs(kvs), do: to_string('?' ++ URI.encode_query(kvs))
+  defp build_qs(kvs), do: to_string('&' ++ URI.encode_query(kvs))
 
   def authorization(%{client_id: client_id, client_secret: client_secret}, headers) do
     %{client_id: client_id, client_secret: client_secret}

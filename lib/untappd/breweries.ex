@@ -1,24 +1,24 @@
-defmodule Untappd.Beers do
+defmodule Untappd.Breweries do
   import Untappd
   alias Untappd.Client
 
   @doc """
-    List beers
+    List breweries
   """
 
   @spec find(binary, Client.t) :: Untappd.response
   def find(bid, client \\ %Client{}) do
-    get "beer/info/#{bid}/", client
+    get "brewery/info/#{bid}/", client
   end
 
   @spec checkins(binary, Client.t) :: Untappd.response
   def checkins(bid, client \\ %Client{}) do
-    get "beer/checkins/#{bid}/", client
+    get "brewery/checkins/#{bid}/", client
   end
 
   @spec search(map, Client.t) :: Untappd.response
   def search(params, client \\ %Client{}) do
-    get "search/beer", client, params
+    get "search/brewery", client, params
   end
 
 end
