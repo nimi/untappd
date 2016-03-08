@@ -16,9 +16,14 @@ defmodule Untappd.Beers do
     get "beer/checkins/#{bid}/", client
   end
 
+  @spec trending(map, Client.t) :: Untappd.response
+  def trending(params, client \\ %Client{}) do
+    get "beer/trending/", client, params
+  end
+
   @spec search(map, Client.t) :: Untappd.response
   def search(params, client \\ %Client{}) do
-    get "search/beer", client, params
+    get "search/beer/", client, params
   end
 
 end
