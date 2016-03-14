@@ -11,13 +11,35 @@ defmodule Untappd.BeersTest do
   )
 
   setup_all do
+    ExVCR.Config.filter_url_params(true)
     HTTPoison.start
   end
 
   test "beer/info/16630" do
     use_cassette "beers#info" do
-      %{"meta" => meta} = info(16630, @client)
-      assert meta.status_code == 200
+      %{"meta" => %{"code" => code}} = info(16630, [], @client)
+      assert code == 200
+    end
+  end
+
+  test "search/beer" do
+    use_cassette "beers#search" do
+      %{"meta" => %{"code" => code}} = search(%{q: "sculpin"}, @client)
+      assert code == 200
+    end
+  end
+
+    test "beer/checkins/16630" do
+    use_cassette "beers#checkins" do
+      %{"meta" => %{"code" => code}} = checkins(16630, [], @client)
+      assert code == 200
+    end
+  end
+
+  test "beer/trending" do
+    use_cassette "beers#trending" do
+      %{"meta" => %{"code" => code}} = trending([], @client)
+      assert code == 200
     end
   end
 

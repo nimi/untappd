@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "uptappd"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.untappd.com/v4/venue/info/68/"
+    },
+    "response": {
+      "body": "{\"meta\":{\"code\":200,\"response_time\":{\"time\":0.039,\"measure\":\"seconds\"},\"init_time\":{\"time\":0.005,\"measure\":\"seconds\"}},\"notifications\":[],\"response\":{\"venue\":{\"venue_id\":68,\"venue_name\":\"Chase\",\"venue_slug\":null,\"last_updated\":\"Tue, 06 Mar 2012 03:50:28 +0000\",\"primary_category\":\"Shop & Service\",\"categories\":{\"count\":1,\"items\":[{\"category_name\":\"Bank\",\"category_id\":\"4bf58dd8d48988d10a951735\",\"is_primary\":true}]},\"stats\":{\"total_count\":0,\"user_count\":0,\"total_user_count\":0,\"monthly_count\":0,\"weekly_count\":0},\"venue_icon\":{\"sm\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/shops\\/financial_bg_64.png\",\"md\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/shops\\/financial_bg_88.png\",\"lg\":\"https:\\/\\/foursquare.com\\/img\\/categories_v2\\/shops\\/financial_bg_88.png\"},\"public_venue\":false,\"location\":{\"venue_address\":\"1333 4th St, Santa Monica\",\"venue_city\":\"Los Angeles\",\"venue_state\":\"CA\",\"venue_country\":null,\"lat\":34.0173,\"lng\":-118.496},\"contact\":{\"twitter\":null,\"venue_url\":null},\"foursquare\":{\"foursquare_id\":null,\"foursquare_url\":null},\"media\":{\"count\":0,\"items\":[]},\"checkins\":{\"count\":0,\"items\":[]},\"top_beers\":{\"offset\":0,\"limit\":15,\"count\":0,\"items\":[]}}}}",
+      "headers": {
+        "Date": "Mon, 14 Mar 2016 15:26:56 GMT",
+        "Server": "Apache",
+        "X-Powered-By": "PHP/5.5.9-1ubuntu4.5",
+        "X-Ratelimit-Limit": "100",
+        "X-Ratelimit-Remaining": "61",
+        "X-Auth-Type": "key",
+        "X-API-Version": "4",
+        "X-HTTP-Protocol": "80",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Accept, Origin, Content-Type, X-Untappd-App, X-Untappd-App-Version",
+        "Content-Length": "1168",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "uptappd"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.untappd.com/v4/venue/checkins/2/"
+    },
+    "response": {
+      "body": "{\"meta\":{\"code\":200,\"response_time\":{\"time\":0.014,\"measure\":\"seconds\"},\"init_time\":{\"time\":0.004,\"measure\":\"seconds\"}},\"notifications\":[],\"response\":{\"checkins\":{\"items\":[],\"count\":0}}}",
+      "headers": {
+        "Date": "Mon, 14 Mar 2016 15:26:25 GMT",
+        "Server": "Apache",
+        "X-Powered-By": "PHP/5.5.9-1ubuntu4.5",
+        "X-Ratelimit-Limit": "100",
+        "X-Ratelimit-Remaining": "62",
+        "X-Auth-Type": "key",
+        "X-API-Version": "4",
+        "X-HTTP-Protocol": "80",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Accept, Origin, Content-Type, X-Untappd-App, X-Untappd-App-Version",
+        "Content-Length": "185",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "uptappd"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.untappd.com/v4/user/friends/spaceham/"
+    },
+    "response": {
+      "body": "{\"meta\":{\"code\":200,\"response_time\":{\"time\":0.01,\"measure\":\"seconds\"},\"init_time\":{\"time\":0.005,\"measure\":\"seconds\"}},\"notifications\":[],\"response\":{\"count\":1,\"items\":[{\"friendship_hash\":\"0d247f968a61f5cf5adb30c9a483509b\",\"created_at\":\"Fri, 23 Aug 2013 18:52:57 +0000\",\"user\":{\"uid\":724793,\"user_name\":\"bethweidl\",\"location\":\"Chicago\",\"bio\":\"Texan expat back in the Midwest for the beer.\",\"is_supporter\":0,\"first_name\":\"Elizabeth\",\"last_name\":\"W.\",\"relationship\":\"none\",\"user_avatar\":\"https:\\/\\/untappd.akamaized.net\\/profile\\/54257519813fe79d781c04eea3af9262_thumb.png\"},\"mutual_friends\":{\"count\":0,\"items\":[]}}]}}",
+      "headers": {
+        "Date": "Mon, 14 Mar 2016 15:20:20 GMT",
+        "Server": "Apache",
+        "X-Powered-By": "PHP/5.5.9-1ubuntu4.14",
+        "X-Ratelimit-Limit": "100",
+        "X-Ratelimit-Remaining": "71",
+        "X-Auth-Type": "key",
+        "X-API-Version": "4",
+        "X-HTTP-Protocol": "80",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Accept, Origin, Content-Type, X-Untappd-App, X-Untappd-App-Version",
+        "Content-Length": "615",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

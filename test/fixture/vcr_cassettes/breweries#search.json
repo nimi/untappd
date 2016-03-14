@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "uptappd"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.untappd.com/v4/search/brewery"
+    },
+    "response": {
+      "body": "{\"meta\":{\"code\":200,\"response_time\":{\"time\":0.014,\"measure\":\"seconds\"},\"init_time\":{\"time\":0.005,\"measure\":\"seconds\"}},\"notifications\":[],\"response\":{\"search_type\":\"wildcard\",\"sort\":\"\",\"term\":\"Ballast Point\",\"key\":\"ballast* AND point*\",\"found\":1,\"brewery\":{\"count\":1,\"items\":[{\"brewery\":{\"brewery_id\":68,\"beer_count\":954,\"brewery_name\":\"Ballast Point Brewing & Spirits\",\"brewery_label\":\"https:\\/\\/untappd.akamaized.net\\/site\\/brewery_logos\\/brewery-ballastpointbrewingcompany_68.jpeg\",\"country_name\":\"United States\",\"location\":{\"brewery_city\":\"\",\"brewery_state\":\"\",\"lat\":0,\"lng\":0}}}]}}}",
+      "headers": {
+        "Date": "Mon, 14 Mar 2016 14:59:37 GMT",
+        "Server": "Apache",
+        "X-Powered-By": "PHP/5.5.9-1ubuntu4.5",
+        "X-Ratelimit-Limit": "100",
+        "X-Ratelimit-Remaining": "80",
+        "X-Auth-Type": "key",
+        "X-API-Version": "4",
+        "X-HTTP-Protocol": "80",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Accept, Origin, Content-Type, X-Untappd-App, X-Untappd-App-Version",
+        "Content-Length": "587",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
