@@ -6,8 +6,8 @@ defmodule Untappd.Venues do
     List venues
   """
 
-  @spec find(binary, Client.t) :: Untappd.response
-  def find(vid, client \\ %Client{}) do
+  @spec info(binary, Client.t) :: Untappd.response
+  def info(vid, client \\ %Client{}) do
     get "venue/info/#{vid}/", client
   end
 

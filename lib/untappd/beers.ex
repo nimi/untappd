@@ -6,8 +6,8 @@ defmodule Untappd.Beers do
     List beers
   """
 
-  @spec find(binary, Client.t) :: Untappd.response
-  def find(bid, client \\ %Client{}) do
+  @spec info(binary, Client.t) :: Untappd.response
+  def info(bid, client \\ %Client{}) do
     get "beer/info/#{bid}/", client
   end
 

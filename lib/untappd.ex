@@ -1,5 +1,4 @@
 defmodule Untappd do
-  require Logger
   use HTTPoison.Base
   alias Untappd.Client
 
@@ -8,6 +7,7 @@ defmodule Untappd do
   @type response :: {integer, any} | :jsx.json_term
 
   @spec process_response(HTTPoison.Response.t) :: response
+  def process_response(_), do: nil
   def process_response(%HTTPoison.Response{status_code: 200, body: ""}), do: nil
   def process_response(%HTTPoison.Response{status_code: 200, body: body}), do: JSX.decode!(body)
   def process_response(%HTTPoison.Response{status_code: status_code, body: ""}), do: { status_code, nil }
@@ -32,11 +32,10 @@ defmodule Untappd do
   def get(path, client, params \\ []) do
     initial_url = url(client, path)
     url = add_params_to_url(initial_url, params)
-    Logger.debug(url)
     _request(:get, url, client.auth)
   end
 
-  def _request(method, url, auth, body \\ "") do
+  def _request(method, url, _auth, body \\ "") do
     json_request(method, url, body, @user_agent)
   end
 
@@ -61,7 +60,7 @@ defmodule Untappd do
   defp build_qs([]), do: ""
   defp build_qs(kvs), do: to_string('&' ++ URI.encode_query(kvs))
 
-  def authorization(%{client_id: client_id, client_secret: client_secret}, headers) do
+  def authorization(%{client_id: client_id, client_secret: client_secret}) do
     %{client_id: client_id, client_secret: client_secret}
   end
 
