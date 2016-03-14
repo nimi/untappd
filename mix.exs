@@ -33,4 +33,11 @@ defmodule Untappd.Mixfile do
       {:exvcr, "~> 0.6", only: :test},
       { :meck, "~> 0.8", only: :test } ]
   end
+
+  defp package do
+    [ maintainers: ["Nicholas Mitchell"],
+      licenses: ["MIT"],
+      links: %{ "Github" => "https://github.com/nimi/untappd" } ]
+  end
+
 end
