@@ -3,9 +3,6 @@ defmodule Untappd.Users do
   alias Untappd.Client
 
   @doc """
-    List users
-  """
-  @doc """
   USERNAME (string, optional) - The username that you wish to call the request upon.
 
   compact (string, optional) - You can pass   "true" here only show the user infomation,

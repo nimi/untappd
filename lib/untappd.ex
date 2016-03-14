@@ -7,7 +7,6 @@ defmodule Untappd do
   @type response :: {integer, any} | :jsx.json_term
 
   @spec process_response(HTTPoison.Response.t) :: response
-  def process_response(_), do: nil
   def process_response(%HTTPoison.Response{status_code: 200, body: ""}), do: nil
   def process_response(%HTTPoison.Response{status_code: 200, body: body}), do: JSX.decode!(body)
   def process_response(%HTTPoison.Response{status_code: status_code, body: ""}), do: { status_code, nil }

@@ -3,10 +3,6 @@ defmodule Untappd.Beers do
   alias Untappd.Client
 
   @doc """
-    List beers
-  """
-
-  @doc """
   BID (int, required) - The Beer ID that you want to get info
 
   compact (string, optional) - You can pass "true" here only show the beer infomation,

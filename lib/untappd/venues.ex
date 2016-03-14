@@ -3,10 +3,6 @@ defmodule Untappd.Venues do
   alias Untappd.Client
 
   @doc """
-    Venues
-  """
-
-  @doc """
   VID (int, required) - The Venue ID that you want to display info
 
   compact (string, optional) - You can pass   "true" here only show the venue infomation, and
